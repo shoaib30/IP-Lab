@@ -1,0 +1,34 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head><title>Exercises on css</title>
+<!-- external style sheet -->
+<link type = "text/css" rel = "stylesheet" href = "extcss.css" />
+<!-- document level style sheet -->
+<style type = "text/css">
+  p.doclvl { background-color : powderblue ;
+             color : white ;
+             font : 14pt 'Times New Roman';
+           }
+</style>
+</head>
+<body>
+  <p style = "background-color : red; color : yellow ; font-family : Futura, Arial;">
+      The Swing package defined in javax.swing, includes a collection of components that are what we have called widgets. A label component is an object of class Jlabel. A Jlabel object is a static string used to label other components. <br />
+      final JLabel labl = new JLabel("Customer name:"); <br />
+      This is done in internal style sheet.
+  </p>
+  <p class = "doclvl">
+       A button is an object of class JButton. The parameter to the JButton constructor becomes the label in the button depiction. <br />
+       JButton myButton = new JButton("Click me"); <br />
+       This is done in document level style sheet.
+  </p>
+  <p class = "extlvl">
+      A checkbox is an object of JCheckbox. The constructor for checkboxes has just one parameter, the label to appear next to the checkbox: <br />
+      JCheckbox box1 = new JCheckbox("Hamburger"); <br />
+      This is done in external level style sheet.
+  </p>
+</body>
+</html>
+     
+
