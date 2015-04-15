@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="cars.css"?>
+
+<!DOCTYPE cars[
+		<!ELEMENT cars (car+)>
+		<!ELEMENT car (make,model,year, color, engine, accessories)>
+		<!ELEMENT make (#PCDATA)>
+		<!ELEMENT model (#PCDATA)>
+		<!ELEMENT year (#PCDATA)>
+		<!ELEMENT color (#PCDATA)>
+		<!ELEMENT engine (no_of_cylinders,fuel_system)>
+		<!ELEMENT no_of_cylinders (#PCDATA)>
+		<!ELEMENT fuel_system (#PCDATA)>
+		<!ELEMENT accessories (#PCDATA)>
+
+		<!ATTLIST accessories 	radio CDATA #REQUIRED
+					AC CDATA #REQUIRED
+					power_windows CDATA #REQUIRED
+					power_steering CDATA #REQUIRED
+					power_brakes CDATA #REQUIRED>
+
+		<!ENTITY m "Maruti">
+		<!ENTITY h "Hyundai">
+		<!ENTITY t "Toyota">
+		<!ENTITY v "Volvo">
+		]>
+
+<cars>
+	<car>
+		<make>	&m;	</make>
+		<model>	Swift	</model>
+		<year>	2009	</year>
+		<color>	Black	</color>
+		<engine>
+			<no_of_cylinders>	6	</no_of_cylinders>
+			<fuel_system>	carborated	</fuel_system>
+		</engine>
+		<accessories radio="yes" AC="yes" power_windows="no" power_steering="yes" power_brakes="no">Accessories Present</accessories>
+	</car>
+	<car>
+		<make>	&h;	</make>
+		<model>	i20	</model>
+		<year>	2010	</year>
+		<color>	white	</color>
+		<engine>
+			<no_of_cylinders>	6	</no_of_cylinders>
+			<fuel_system>	CDRI	</fuel_system>
+		</engine>
+		<accessories radio="yes" AC="yes" power_windows="yes" power_steering="yes" power_brakes="no">Accessories Present</accessories>
+	</car>
+	<car>
+		<make>	&t;	</make>
+		<model>	Innova	</model>
+		<year>	2008	</year>
+		<color>	Red	</color>
+		<engine>
+			<no_of_cylinders>	8	</no_of_cylinders>
+			<fuel_system>	Injection	</fuel_system>
+		</engine>
+		<accessories radio="yes" AC="yes" power_windows="yes" power_steering="yes" power_brakes="yes">Accessories Present</accessories>
+	</car>
+	<car>
+		<make>	&v;	</make>
+		<model>	X6	</model>
+		<year>	2014	</year>
+		<color>	black	</color>
+		<engine>
+			<no_of_cylinders>	10	</no_of_cylinders>
+			<fuel_system>	Injection	</fuel_system>
+		</engine>
+		<accessories radio="yes" AC="yes" power_windows="yes" power_steering="yes" power_brakes="yes">Accessories Present</accessories>
+	</car>
+	<car>
+		<make>	&m;	</make>
+		<model>	Ciaz	</model>
+		<year>	2014	</year>
+		<color>	Silver	</color>
+		<engine>
+			<no_of_cylinders>	8	</no_of_cylinders>
+			<fuel_system>	Carborated	</fuel_system>
+		</engine>
+		<accessories radio="yes" AC="yes" power_windows="yes" power_steering="yes" power_brakes="yes">Accessories Present</accessories>
+	</car>
+	<car>
+		<make>	&h;	</make>
+		<model>	i20	</model>
+		<year>	2008	</year>
+		<color>	Blue	</color>
+		<engine>
+			<no_of_cylinders>	4	</no_of_cylinders>
+			<fuel_system>	Injection	</fuel_system>
+		</engine>
+		<accessories radio="yes" AC="yes" power_windows="no" power_steering="yes" power_brakes="no">Accessories Present</accessories>
+	</car>	<car>
+		<make>	&t;	</make>
+		<model>	Camary	</model>
+		<year>	2008	</year>
+		<color>	White	</color>
+		<engine>
+			<no_of_cylinders>	6	</no_of_cylinders>
+			<fuel_system>	CDRI	</fuel_system>
+		</engine>
+		<accessories radio="yes" AC="yes" power_windows="yes" power_steering="yes" power_brakes="yes">Accessories Present</accessories>
+	</car>
+	<car>
+		<make>	&v;	</make>
+		<model>	X10	</model>
+		<year>	2015	</year>
+		<color>	Black	</color>
+		<engine>
+			<no_of_cylinders>	10	</no_of_cylinders>
+			<fuel_system>	Injection	</fuel_system>
+		</engine>
+		<accessories radio="yes" AC="yes" power_windows="yes" power_steering="yes" power_brakes="yes">Accessories Present</accessories>
+	</car>
+</cars>
