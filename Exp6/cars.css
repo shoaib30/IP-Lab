@@ -1,0 +1,5 @@
+cars{display:block;margin-top:15px;color:blue;}
+make,model,year{color:red;font-size:16pt;}
+color{display:block;margin-left:20px;font-size:12pt;}
+no_of_cylinders,fuel_system{display:block;margin-left:20px;font-size:12pt;}
+accessories{display:block;margin-left:20px;font-size:14pt;}
