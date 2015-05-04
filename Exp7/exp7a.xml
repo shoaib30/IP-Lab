@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<patient
+	xmlns="patientSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="patientSchema exp7a.xsd">
+<pname>John</pname>
+<disease>Fever</disease>
+<age>40</age>
+<ptype>in-patient</ptype>
+</patient>
