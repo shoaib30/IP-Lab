@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="7b.xsl"?>
+
+<employees>
+	<employee>
+		<ename>Peter Parker</ename>
+		<edesig>RnD</edesig>
+		<esalary>500,000</esalary>
+	</employee>
+	<employee>
+		<ename>Bruce Wayne</ename>
+		<edesig>Graphic Designer</edesig>
+		<esalary>160,000</esalary>
+	</employee>
+</employees>
