@@ -6,6 +6,7 @@ use CGI::Cookie;
 #getting data from form
 $a=param("t1");
 $b=param("t2");
+$flag=0;
 
 
 #storing the data into the cookie
@@ -23,7 +24,13 @@ foreach $nm (keys %cookies)
 	if ($nm eq $a)
 	{
 		print ("Welcome back $a");
+		$flag=1;
 		last; #breaks from loop
 	}
+}
+
+if($flag==0)
+{
+	print ("Welcome new visitor");
 }
 exit(0);
