@@ -5,9 +5,8 @@ use CGI::Cookie;
 
 #getting data from form
 $a=param("t1");
-$b=param("t2");
+$b=localtime();
 $flag=0;
-
 
 #storing the data into the cookie
 $Dcookie=CGI::Cookie->new(-name=>$a,-value=>$b,-expires=>'+3M');
@@ -23,7 +22,11 @@ foreach $nm (keys %cookies)
 {
 	if ($nm eq $a)
 	{
-		print ("Welcome back $a");
+		$lv=$cookies{$nm}->value;
+		print html_start;
+		print ("Welcome back $a<br/>");
+		print ("last visit : $lv");
+		print html_end;
 		$flag=1;
 		last; #breaks from loop
 	}
