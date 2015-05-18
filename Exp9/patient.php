@@ -1,5 +1,5 @@
 <?php
-	$db=mysql_connect("localhost","root","");
+	$db=mysql_connect("localhost","sid","Shoaib@123");
 	if(!$db)
 		exit("error connecting MySQL");
 	$er=mysql_select_db("hospital");
